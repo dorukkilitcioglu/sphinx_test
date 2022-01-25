@@ -1,3 +1,4 @@
 .persistd/*
 doctrees
 .idea
+docsrc/_build/
