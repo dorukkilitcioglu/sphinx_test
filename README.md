@@ -1,4 +1,4 @@
-[![ci](https://github.com/fidelity/jurity/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/fidelity/jurity/actions/workflows/test.yml)
+[![ci](https://github.com/dorukkilitcioglu/sphinx_test/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/dorukkilitcioglu/sphinx_test/actions/workflows/test.yml)
 
 # Testing Sphinx on GH pages
 
