@@ -2,3 +2,6 @@
 doctrees
 .idea
 docsrc/_build/
+build/
+dist/
+*.egg-info/
