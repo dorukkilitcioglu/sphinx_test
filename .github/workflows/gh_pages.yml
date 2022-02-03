@@ -30,12 +30,11 @@ jobs:
 
     - name: Build sphinx
       working-directory: docsrc
-      run: |
-        make github
+      run: make
 
     - name: Deploy to GH Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs
+        publish_dir: ./docsrc/_build/html/
         enable_jekyll: true
