@@ -8,7 +8,7 @@
 - [x] Unit tests on python versions
 - [ ] Update docs on release
 - [x] Upload to (Test)PyPI on release
-- [ ] Docs version check with library version
+- [x] Docs version check with library version
 - [ ] Coverage badge
 
 ## Steps
