@@ -7,6 +7,8 @@ on:
   pull_request:
     branches:
       - master
+  schedule:
+    - cron: '25 16 * * 1' # Schedule at 16:25 UTC on Mondays, which is midday in EST
 
 jobs:
   Test:

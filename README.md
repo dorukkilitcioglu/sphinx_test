@@ -11,7 +11,7 @@
 - [x] Docs version check with library version
 - [ ] Coverage badge
 - [x] Check docs can be built within a PR
-- [ ] Schedule periodical testing
+- [x] Schedule periodical testing
 
 ## Steps
 - Upload project to PyPI (the instructions below are for Test PyPI)
@@ -24,3 +24,4 @@
 - Go to project settings in GitHub, add a new secret called `TEST_PYPI_API_TOKEN`
 - Add sphinx requirements to `docs/requirements.txt`
 - Add documentation source under `docs`.
+- Adjust the periodical testing schedule in `test.yml`.
