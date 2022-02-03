@@ -30,7 +30,7 @@ jobs:
 
     - name: Build sphinx
       working-directory: docsrc
-      run: make
+      run: make html
 
     - name: Deploy to GH Pages
       uses: peaceiris/actions-gh-pages@v3
