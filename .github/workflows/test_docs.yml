@@ -9,7 +9,7 @@ on:
       - master
 
 jobs:
-  deploy:
+  Test:
     runs-on: ubuntu-latest
 
     steps:
