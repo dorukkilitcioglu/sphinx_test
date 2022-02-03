@@ -10,19 +10,21 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+import os
+import sys
+sys.path.insert(0, os.path.abspath('..'))
 
 
 # -- Project information -----------------------------------------------------
 
-project = 'sphinx_test'
+project = 'gha_aut_test'
 copyright = '2019, Doruk Kilitcioglu'
 author = 'Doruk Kilitcioglu'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.1'
+with open(os.path.join(os.path.abspath('..'), 'gha_aut_test', '_version.py')) as fp:
+    exec(fp.read())
+release = __version__
 
 
 # -- General configuration ---------------------------------------------------
@@ -55,3 +57,7 @@ html_theme = 'sphinx_rtd_theme'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+# Common links
+extlinks = {'repo': ('https://github.com/dorukkilitcioglu/sphinx_test%s', None),
+            'docs': ('https://dorukkilitcioglu.github.io/sphinx_test%s', None)}

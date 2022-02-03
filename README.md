@@ -1,11 +1,13 @@
 [![ci](https://github.com/dorukkilitcioglu/sphinx_test/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/dorukkilitcioglu/sphinx_test/actions/workflows/test.yml)
+[![PyPI version fury.io](https://badge.fury.io/py/gha-aut-test.svg)](https://pypi.python.org/pypi/gha-aut-test/)
+[![PyPI license](https://img.shields.io/pypi/l/gha-aut-test.svg)](https://pypi.python.org/pypi/gha-aut-test/)
 
 # Testing Sphinx on GH pages
 
 ## Things to automate
 - [x] Unit tests on python versions
 - [ ] Update docs on release
-- [ ] Upload to (Test)PyPI on release
+- [x] Upload to (Test)PyPI on release
 - [ ] Docs version check with library version
 - [ ] Coverage badge
 

@@ -8,11 +8,17 @@ Welcome to sphinx_test's documentation!
 
 This is a test.
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
 
+Source Code
+===========
+The source code is hosted on :repo:`GitHub <>`.
 
+.. sidebar:: Contents
+
+	.. toctree::
+	   :maxdepth: 2
+
+	   api
 
 Indices and tables
 ==================
