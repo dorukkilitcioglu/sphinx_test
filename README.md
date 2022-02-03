@@ -6,7 +6,7 @@
 
 ## Things to automate
 - [x] Unit tests on python versions
-- [ ] Update docs on release
+- [x] Update docs on release
 - [x] Upload to (Test)PyPI on release
 - [x] Docs version check with library version
 - [ ] Coverage badge

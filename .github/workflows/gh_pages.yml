@@ -1,14 +1,10 @@
 name: Build and publish GitHub Pages
 
-# Build on all pushes to master for testing
-#on:
-# release:
-#   types: [released]
-
+# Build docs on release
 on:
-  push:
-    branches:
-      - master
+ release:
+   types: [released]
+
 
 jobs:
   deploy:
