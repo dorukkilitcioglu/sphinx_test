@@ -10,7 +10,7 @@
 - [x] Upload to (Test)PyPI on release
 - [x] Docs version check with library version
 - [ ] Coverage badge
-- [ ] Check docs can be built within a PR
+- [x] Check docs can be built within a PR
 - [ ] Schedule periodical testing
 
 ## Steps
