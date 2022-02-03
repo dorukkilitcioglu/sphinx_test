@@ -22,3 +22,5 @@
   ```
 - Create an API key in PyPI, making sure to only give upload access to your repo.
 - Go to project settings in GitHub, add a new secret called `TEST_PYPI_API_TOKEN`
+- Add sphinx requirements to `docs/requirements.txt`
+- Add documentation source under `docs`.
