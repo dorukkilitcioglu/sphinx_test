@@ -26,7 +26,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -e .
-        pip install -r ../docsrc/requirements.txt
+        pip install -r docsrc/requirements.txt
 
     - name: Build sphinx
       working-directory: docsrc
