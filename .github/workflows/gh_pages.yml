@@ -29,12 +29,12 @@ jobs:
         pip install -r docsrc/requirements.txt
 
     - name: Build sphinx
-      working-directory: docsrc
+      working-directory: docs
       run: make html
 
     - name: Deploy to GH Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docsrc/_build/html/
+        publish_dir: ./docs/_build/html/
         enable_jekyll: true
