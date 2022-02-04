@@ -1,6 +1,7 @@
 [![ci](https://github.com/dorukkilitcioglu/sphinx_test/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/dorukkilitcioglu/sphinx_test/actions/workflows/test.yml)
 [![PyPI version fury.io](https://badge.fury.io/py/gha-aut-test.svg)](https://pypi.python.org/pypi/gha-aut-test/)
 [![PyPI license](https://img.shields.io/pypi/l/gha-aut-test.svg)](https://pypi.python.org/pypi/gha-aut-test/)
+[![Coverage](https://coveralls.io/repos/github/dorukkilitcioglu/sphinx_test/badge.svg?branch=master)](https://coveralls.io/github/dorukkilitcioglu/sphinx_test?branch=master)
 
 # Testing Sphinx on GH pages
 

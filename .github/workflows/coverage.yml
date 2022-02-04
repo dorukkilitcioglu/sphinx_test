@@ -1,0 +1,39 @@
+name: Test coverage
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -e .
+
+    - name: Test with coverage
+      run: |
+        coverage run -m unittest discover tests
+
+    - name: Debug coverage
+      run: |
+        coverage report -m
+
+    - name: Upload coverage data to coveralls.io
+      run: coveralls --service=github --rcfile=.coveragerc
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -15,3 +15,7 @@ def relu(x: np.ndarray) -> np.ndarray:
         Input array with ReLU applied
     """
     return np.maximum(x, 0.)
+
+
+def uncovered_fn():
+    return 'a'

@@ -1,0 +1,5 @@
+[run]
+omit =
+    gha_aut_test/__init__.py
+    gha_aut_test/_version.py
+    tests/*
