@@ -39,7 +39,7 @@ jobs:
         coverage xml
 
     - name: Upload coverage
-    - uses: codecov/codecov-action@v2
+      uses: codecov/codecov-action@v2
       with:
 #        token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
 #        files: ./coverage1.xml,./coverage2.xml # optional
