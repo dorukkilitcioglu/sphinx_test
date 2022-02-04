@@ -34,7 +34,20 @@ jobs:
       run: |
         coverage report -m
 
-    - name: Upload coverage data to coveralls.io
-      run: coveralls --service=github --rcfile=.coveragerc
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Generate coverage report
+      run: |
+        coverage xml
+
+    - name: Upload coverage
+    - uses: codecov/codecov-action@v2
+      with:
+#        token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+#        files: ./coverage1.xml,./coverage2.xml # optional
+#        flags: unittests # optional
+#        name: codecov-umbrella # optional
+        fail_ci_if_error: true # optional (default = false)
+        verbose: true # optional (default = false)
+#        - name: Upload coverage data to coveralls.io
+#          run: coveralls --service=github --rcfile=.coveragerc
+#          env:
+#            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
