@@ -9,3 +9,5 @@ updates:
     ignore:
       - dependency-name: "numpy"
         versions: ["1.19.5"]
+      - dependency-name: "scikit-learn"
+        versions: ["0.15.0"]
